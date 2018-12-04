@@ -16,3 +16,32 @@ puts "----------"
 # ASSIGN VARIABLE @mens_stores
 # LOOP THROUGH EACH AND OUTPUT NAME AND ANNUAL REVENUE
 # FETCH STRES THT CARRY WOMENS APPAREL AND REVENUE LESS THAN 1,000,000
+
+Store.create(name: 'Surrey',
+            annual_revenue: 224000,
+            mens_apparel: false,
+            womens_apparel: true)
+
+Store.create(name: 'Whistler',
+            annual_revenue: 1900000,
+            mens_apparel: true,
+            womens_apparel: false)
+            
+Store.create(name: 'Yaletown',
+            annual_revenue: 430000,
+            mens_apparel: true,
+            womens_apparel: true)
+
+@mens_store = Store.where(mens_apparel: true)
+
+puts "----- MENS STORES -----"
+
+@mens_store.each do |store| 
+    puts "Name: #{store.name}" + " Revenue: #{store.annual_revenue}"
+end
+
+puts "----- WOMENS STORES  -----"
+
+@womens_store = Store.where('womens_apparel = true AND annual_revenue < 1000000')
+
+pp @womens_store

@@ -20,3 +20,10 @@ puts "----------"
 # ASK USER FOR A STORE NAME TO PLACE IN VARIABLE
 # CREATE STORE WITH USER VARIABLE 
     # DISPLAY ERROR MESSAGES TO USER AFTER SAVE/CREATE THE RECORD
+
+new_store = Store.new
+new_store.name = gets.chomp
+
+if !new_store.valid?
+    puts new_store.error.details
+end

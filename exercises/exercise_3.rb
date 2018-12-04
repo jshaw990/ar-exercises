@@ -6,3 +6,6 @@ puts "Exercise 3"
 puts "----------"
 
 # Your code goes here ...
+
+# LOAD THIRD STORE @store3
+# USE ARs DESTROY METHOD TO DELETE STORE

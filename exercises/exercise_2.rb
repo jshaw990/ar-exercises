@@ -5,3 +5,7 @@ puts "Exercise 2"
 puts "----------"
 
 # Your code goes here ...
+
+# LOAD FIRST STORE (ID=1) ASSIGN TO INSTANCE VARIABLE @store1
+# LOAD SECOND STORE (ID=2) ASSIGN TO @store2
+# UPDATE FIRST STORE CHANGING ITS NAME
